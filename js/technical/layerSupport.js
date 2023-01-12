@@ -1,8 +1,8 @@
 var layers = {}
 const EN = ExpantaNum
-const ExpantaNumZero = new ExpantaNum(0)
-const ExpantaNumOne = new ExpantaNum(1)
-const ExpantaNumNaN = new ExpantaNum(NaN)
+const ExpantaNumZero = decimalZero = new ExpantaNum(0)
+const ExpantaNumOne = decimalOne = new ExpantaNum(1)
+const ExpantaNumNaN = decimalNaN = new ExpantaNum(NaN)
 
 function layerShown(layer){
     return tmp[layer].layerShown;
