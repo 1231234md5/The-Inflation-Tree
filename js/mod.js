@@ -41,7 +41,8 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new ExpantaNum(0)
 
-	let gain = new ExpantaNum(1)
+	let gain = new ExpantaNum(layers.p.gainMult().pow(layers.p.gainExp()).pow(.3))
+if(hasUpgrade('p',11))gain=gain.pow(upgEff('p',11))
 	return gain
 }
 
